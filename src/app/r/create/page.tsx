@@ -8,7 +8,7 @@ import { useMutation } from '@tanstack/react-query';
 import axios, { AxiosError } from 'axios';
 import { CreateSubredditPayload } from '@/lib/validators/subreddit';
 import { toast } from '@/hooks/use-toast';
-import { useCustomToasts } from '@/hooks/use-custom-toast';
+import { useCustomToasts } from '@/hooks/use-custom-toasts';
 
 const Page = () => {
   const [input, setInput] = useState<string>('');

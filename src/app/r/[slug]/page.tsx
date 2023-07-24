@@ -38,9 +38,6 @@ const page = async ({ params }: PageProps) => {
 
   return (
     <>
-      <h1 className="font-bold text-2xl md:text-3xl h-14">
-        r/{subreddit.name}
-      </h1>
       <MiniCreatePost session={session} />
       <PostFeed initialPosts={subreddit.posts} subredditName={subreddit.name} />
     </>

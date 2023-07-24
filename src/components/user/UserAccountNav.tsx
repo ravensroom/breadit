@@ -13,7 +13,9 @@ import {
 import UserAvatar from './UserAvatar';
 
 interface UserAccountNavProps {
-  user: Pick<User, 'name' | 'email' | 'image'>;
+  user: Pick<User, 'name' | 'email' | 'image'> & {
+    username?: string | null | undefined;
+  };
 }
 
 const UserAccountNav: React.FC<UserAccountNavProps> = ({ user }) => {
@@ -32,6 +34,11 @@ const UserAccountNav: React.FC<UserAccountNavProps> = ({ user }) => {
             {user.email && (
               <p className="w-[200px] truncate text-sm text-muted-foreground">
                 {user.email}
+              </p>
+            )}
+            {user.username && (
+              <p className="w-[200px] truncate text-sm text-muted-foreground">
+                u/{user.username}
               </p>
             )}
           </div>

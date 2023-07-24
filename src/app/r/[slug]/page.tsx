@@ -1,5 +1,5 @@
-import MiniCreatePost from '@/components/posts/MiniCreatePost';
-import PostFeed from '@/components/posts/PostFeed';
+import MiniCreatePost from '@/components/post/MiniCreatePost';
+import PostFeed from '@/components/post/PostFeed';
 import { INFINITE_SCROLL_PAGINATION_RESULTS } from '@/config';
 import { getAuthSession } from '@/lib/auth';
 import { db } from '@/lib/db';

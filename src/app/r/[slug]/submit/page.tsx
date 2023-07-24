@@ -1,4 +1,4 @@
-import Editor from '@/components/posts/Editor';
+import Editor from '@/components/post/Editor';
 import { Button } from '@/components/ui/Button';
 import { db } from '@/lib/db';
 import { notFound } from 'next/navigation';

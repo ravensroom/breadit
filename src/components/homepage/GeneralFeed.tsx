@@ -1,5 +1,5 @@
 import { db } from '@/lib/db';
-import PostFeed from '../posts/PostFeed';
+import PostFeed from '../post/PostFeed';
 import { INFINITE_SCROLL_PAGINATION_RESULTS } from '@/config';
 
 const GeneralFeed = async () => {

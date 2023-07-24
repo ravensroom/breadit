@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Image as ImageIcon, Link2 } from 'lucide-react';
 import { FC } from 'react';
-import UserAvatar from '../UserAvatar';
+import UserAvatar from '../user/UserAvatar';
 import type { Session } from 'next-auth';
 import { usePathname, useRouter } from 'next/navigation';
 
